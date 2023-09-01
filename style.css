@@ -1,0 +1,181 @@
+body {
+    background-color: hsl(36, 100%, 99%);
+}
+
+a:link{
+    text-decoration: none;
+    color: hsl(233, 8%, 79%);
+}
+
+a:visited {
+    text-decoration: none;
+    color: hsl(233, 8%, 79%);
+}
+
+a:hover {
+    text-decoration: none;
+    color: hsl(35, 77%, 62%);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menui {
+    color: hsl(233, 8%, 79%);
+    text-decoration: none;
+}
+
+.main {
+    display: grid;
+    height: auto;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 2fr;
+}
+
+#main_img {
+    grid-area: 1/1/2/3;
+}
+
+.im {
+    height: 100%;
+    width: 100%;
+}
+
+#news {
+    grid-area: 1/3/3/4;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.h2one {
+    color: hsl(35, 77%, 62%);
+    font-family: "inter-bold";
+    font-size: 40px;
+}
+
+h3 {
+    font-family: "inter-bold";
+}
+
+.h3one {
+    color: hsl(36, 100%, 99%);
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.h3one:hover{
+    color: hsl(35, 77%, 62%);
+}
+
+.h3two:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.pone {
+    font-family: "inter-reg";
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+    font-weight: 100;
+}
+
+hr {
+    background-color: hsl(233, 8%, 79%);
+    height: 3px;
+}
+
+h1 {
+    font-family: "inter-ext";
+    font-size: 3rem;
+    color: hsl(240, 100%, 5%);
+}
+
+.ptwo {
+    font-family: "inter-reg";
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+button {
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    border: 0px;
+    padding: 10px 30px;
+    font-family: "inter-bold";
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+.foot {
+    display: grid;
+    height: 50vh;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.img_div {
+    float: left;
+    height: 127px;
+    width: 100px;
+    margin-right: 16px;
+}
+
+.h2two {
+    color: hsl(233, 8%, 79%);
+    font-family: "inter-bold";
+}
+
+.h3two {
+    font-family: "inter-ext";
+    font-size: 1rem;
+    color: hsl(240, 100%, 5%);
+}
+
+.pthree {
+    font-family: "inter-reg";
+    color: hsl(236, 13%, 42%);
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: "inter-reg";
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "inter-bold";
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "inter-ext";
+    src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+@media (max-width: 400px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
+    #m_img {
+        content: url("./assets/images/image-web-3-mobile.jpg");
+    }
+    .im {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #news {
+        grid-area: 1/3/3/4;
+        background-color: hsl(240, 100%, 5%);
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+    }
+}
